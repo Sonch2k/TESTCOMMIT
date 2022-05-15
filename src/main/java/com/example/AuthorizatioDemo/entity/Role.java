@@ -4,13 +4,13 @@ import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "role", uniqueConstraints = {@UniqueConstraint(name = "ROLE_UK", columnNames = "role_name")})
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Role {
+    //co y tao nhe
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
