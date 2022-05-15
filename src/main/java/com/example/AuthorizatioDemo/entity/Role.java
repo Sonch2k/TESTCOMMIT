@@ -11,6 +11,7 @@ import java.util.Set;
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Role {
+    //xin chao moi nguoi
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
