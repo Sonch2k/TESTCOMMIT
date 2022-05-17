@@ -10,10 +10,10 @@ import javax.persistence.*;
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Role {
-    //xin chao moi nguoi
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "role_name")
     private String roleName;
+    private String newcommit;
 }
